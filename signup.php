@@ -63,37 +63,30 @@ if ($success) {
 ?>
 
 <body>
-    <div class="container-fluid bg-gradient bg-dark w-100" id="background">
-        <div class="container rounded w-50 h-auto mx-auto my-5 bg-dark p-3 text-white ">
-            <h1 class="text-center my-4">Sign-Up</h1>
+    <div class="container-fluid bg-gradient bg-dark w-100 mx-auto" id="background">
+        <div
+            class="container rounded w-50 h-auto bg-black bg-gradient p-3 text-white position-absolute top-50 start-50 translate-middle">
 
+            <div class="container-fluid p-4 mb-4">
+                <h1 class="text-center h-3">Create an Account</h1>
+            </div>
             <form action="signup.php" method="post">
-                <div class="row">
-                    <div class="mb-2 mx-auto w-50 column">
-                        <label for="first-name" class="form-label">First Name</label>
-                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="John Jacob"
-                            name="firstname">
-                    </div>
-
-                    <div class="mb-2 mx-auto w-50 column">
-                        <label for="last-name" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" aria-describedby="emailHelp"
-                            placeholder="Jingleheimer Schmidt" name="lastname">
-                    </div>
+                <div class="mb-2 mx-auto w-50 column">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="John Jacob"
+                        name="firstname">
                 </div>
 
-                <div class="row">
-                    <div class="mb-2 mx-auto w-50">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="ex: PewDiePie"
-                            name="username">
-                    </div>
+                <div class="mb-2 mx-auto w-50 column">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Jingleheimer Schmidt" name="lastname">
+                </div>
 
-                    <div class="mb-2 mx-auto w-50">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp"
-                            placeholder="imdabes@gmail.com" name="email">
-                    </div>
+                <div class="mb-2 mx-auto w-50">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="imdabes@gmail.com" name="email">
                 </div>
 
                 <div class="mb-5 mx-auto w-50">
@@ -102,7 +95,9 @@ if ($success) {
                         name="password">
                 </div>
 
-                <button type=" submit" class="btn btn-primary w-100 my-3">Submit</button>
+                <div class="text-center py-4">
+                    <button type=" submit" class="btn btn-primary w-50">Submit</button>
+                </div>
             </form>
         </div>
     </div>
