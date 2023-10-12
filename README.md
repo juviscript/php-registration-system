@@ -17,8 +17,6 @@ Adjusted Bootstrap global variables to fit these colors:
 
 ###################################################################################################################################
 
-Before running the project locally:
 
-npm install 
 
 
